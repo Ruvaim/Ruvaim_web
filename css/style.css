@@ -603,6 +603,56 @@ h3.my-profession {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+/* acknowledgement */
+.acknowledgement .container {
+  padding-bottom: 40px;
+}
+
+.acknowledgement-title h2 {
+  font-size: 30px;
+}
+.acknowledgement .acknowledgement-heading {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+
+.acknowledgement .acknowledgement-heading h2 {
+  color: var(--text-black-900);
+  font-weight: 500;
+}
+
+.acknowledgement .acknowledgement-item {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  margin-bottom: 30px;
+}
+
+.acknowledgement .acknowledgement-item-inner p {
+  text-align: center;
+  font-weight: 500;
+}
+.acknowledgement .acknowledgement-item-inner .acknowledgement-img-heading {
+  color: var(--text-black-900);
+  font-weight: 600;
+}
+.acknowledgement .acknowledgement-item-inner .acknowledgement-img img {
+  width: 100%;
+  max-height: 200px;
+  display: block;
+}
+
+.acknowledgement-img {
+  position: relative;
+}
+
+.acknowledgement-img:hover .overlay {
+  opacity: 1;
+}
+
+.acknowledgement-img {
+  position: relative;
+}
 
 /* Contact */
 .contact-title {
@@ -710,6 +760,7 @@ h3.my-profession {
 }
 @media (max-width: 991px) {
   .contact .contact-info-item,
+  .acknowledgement .acknowledgement-item,
   .portfolio .portfolio-item {
     flex: 0 0 50%;
     max-width: 50%;
@@ -726,6 +777,7 @@ h3.my-profession {
   .contact .contact-form .col-6,
   .contact .contact-info-item,
   .portfolio .portfolio-item,
+  .acknowledgement .acknowledgement-item,
   .about .about-content .education,
   .about .about-content .experience,
   .about .about-content .skills,
